@@ -1,0 +1,11 @@
+Package: myFuncs
+Version: 0.1-1
+Date: 2009-10-16
+Title: Colins Usefull functions
+Author: Colin Millar <millarc@marlab.ac.uk>
+Maintainer: Colin Millar <millarc@marlab.ac.uk>
+Depends: R(>= 2.9.2), grid, RODBC, lattice, Cairo, mgcv, MASS, RLRsim
+Description: Various utility functions
+License: GPL (>= 2)
+URL: http://www.r-project.org
+LazyLoad: yes

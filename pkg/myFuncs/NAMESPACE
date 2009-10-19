@@ -1,0 +1,7 @@
+export(fprintf, printf, cpu, eps, clearfile, newline, getchar,
+       inv.logit, logit, zero.if.null)
+
+export(plotbasemap, bp)
+
+importFrom(stats, runif)
+importFrom(graphics, rect, polygon)
