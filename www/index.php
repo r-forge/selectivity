@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<meta name="description" content="FRS Stats" />
+<meta name="description" content="Selectivity" />
 <meta name="keywords" content="R, statistics, graphics" />
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
 <meta name="Distribution" content="Global" />
@@ -13,7 +13,7 @@
 
 <link rel="stylesheet" href="images/TechJunkie.css" type="text/css" />
 
-<title>FRS Stats</title>
+<title>Selectivity</title>
 
 </head>
 
@@ -25,7 +25,7 @@
 	<div id="header">
 
 		<h1 id="logo-text"><a href="index.php" title="">FRS Stats</a></h1>
-		<p id="slogan">R package of FRS statistics group plotting functions</p>
+		<p id="slogan">R package of Fishing Gear Selectivity Analysis Functions</p>
 
 		<form id="quick-search" action="index.php" method="get" >
 			<p>
@@ -57,7 +57,7 @@
 		<div id="main">
 
 			<a name="Welcome"></a>
-			<h2><a href="index.php" title="">Welcome to the FRS Stats project on R-Forge!</a></h2>
+			<h2><a href="index.php" title="">Welcome to the Selectivity project on R-Forge!</a></h2>
 
 			<p>Some information on whatwe are trying to achieve witht this package...</p>
 
