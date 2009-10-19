@@ -1,20 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en   "
-xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en   ">
+
 <head>
-
- <meta name="description" content="Selectivity" />
- <meta name="keywords" content="R, statistics, graphics" />
- <meta http-equiv="content-type" content="text/xhtml; charset=UTF-8" />
- <meta name="Distribution" content="Global" />
- <meta name="author" content="Colin Millar" />
- <link rel="icon" href="favicon.ico" type="image/x-icon">
- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
- <link href="estilo1.css" rel="stylesheet" type="text/css" />
-
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
  <title>Selectivity</title>
-
+ <link rel="icon" href="favicon.ico" type="image/x-icon" />
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+ <link href="http://r-forge.r-project.org/themes/rforge/styles/estilo1.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
