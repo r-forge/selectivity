@@ -25,9 +25,7 @@
 
  <p>An R package for fitting and analyzing linear and nonlinear selectivity models.
 
-<!--
- <p> <strong>Doxygen</strong> documentation of the underlying C functions is <a href="./doxygen/"><strong>here</strong></a>. </p>
--->
+ <p> <strong>Doxygen</strong> documentation of the underlying fortran functions of TSA is <a href="./doxygen/html/index.html"><strong>here</strong></a>. </p>
 
  <p>The <strong>project summary page</strong> you can find <a href="http://r-forge.r-project.org/projects/selectivity/"><strong>here</strong></a>. </p>
 
