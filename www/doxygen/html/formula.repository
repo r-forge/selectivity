@@ -1,1 +1,11 @@
 \form#0:$(x_1,y_1)$
+\form#1:$ \pi(x_i \mid \mbox{\boldmath$\theta$}, \mbox{\boldmath$y$}) $
+\form#2:\[ \pi(\mbox{\boldmath$x$}, \mbox{\boldmath$\theta$} \mid \mbox{\boldmath$y$}) \propto \pi(\mbox{\boldmath$\theta$}) \pi(\mbox{\boldmath$x$} \mid \mbox{\boldmath$\theta$}) \prod_{i} \pi(y_i \mid x_i, \mbox{\boldmath$\theta$}) \]
+\form#3:$ \pi(\mbox{\boldmath$x$} \mid \mbox{\boldmath$\theta$}) $
+\form#4:$\mbox{\boldmath$\theta$}$
+\form#5:\[ \pi(\mbox{\boldmath$\theta$} \mid \mbox{\boldmath$y$}) \]
+\form#6:$x_i$
+\form#7:$ \mbox{\boldmath$\theta$} $
+\form#8:\[ \pi(x_i \mid \mbox{\boldmath$\theta$}, \mbox{\boldmath$y$}) \]
+\form#9:\[ \pi(x_i \mid \mbox{\boldmath$y$}) \]
+\form#10:\[ \pi(\mbox{\boldmath$y$}) \]

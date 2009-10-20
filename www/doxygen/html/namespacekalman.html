@@ -12,7 +12,6 @@
   <div class="tabs">
     <ul>
       <li><a href="main.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&nbsp;Types&nbsp;List</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -29,33 +28,32 @@
 <h1>kalman Module Reference</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Functions/Subroutines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#a30c8620ecedb17462613ab6917eaf7be">filter</a> (log_lik)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#a10b97c8711c53d71a5861c383cd40538">initialise_state_vector</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#a5537e169f414a60a696d52792a39c8e1">initialise_state_variance</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#a460278a0c0d112ead9f6d95dfd992987">initialise_logistic_parameters</a> (logistic_parameters)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create a <code>GMRFLib_ai_param_tp</code> -object holding the default values.  <a href="#a30c8620ecedb17462613ab6917eaf7be"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#abe7ba0e0d99893adc9156aac3ddecda0">predict_ahead</a> (iy, current_state, predicted_state, current_variance, predicted_variance, large_recruit, stock_info, update_error)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">real(wp), dimension(nstate, nstate)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#ac40ce3f83337c56140c9f321de8c7a7e">random_input_variance</a> (iy, number_of_recruits)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">real(wp), dimension(nstate, nstate)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#a3cf23386786e832ed79919a0b1118226">calculate_phi</a> (current_state, stock_info)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double precision, dimension(nstate, <br class="typebreak"/>
+nstate)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#a14bfd7b65e12f21ab59b2f1d423fe020">random_input_variance</a> (iy, number_of_recruits)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double precision, dimension(nstate, <br class="typebreak"/>
+nstate)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#a04f65b37980c6ca1f0ee5fafcdbf2e76">calculate_phi</a> (current_state, stock_info)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#a0f0e4f4bb27a5073d6016796ac26cbe6">update</a> (iy, predicted_state, predicted_variance, new_state, new_variance, stock_info, rss, delta, update_error)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#ac0927911501e3d059a99987695096e0c">estimate_stock_summary</a> (stock_summary, mean_f_range)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#ac16c03209278ed79a9cd351849ca956c">project_ahead</a> (stock_summary, mean_f_range, var_tmp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#a36300182d6441a839dec4ce934b78545">estimate_stock_summary</a> (stock_summary, stock_summary_smooth, mean_f_range)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#abe0f72ae846de203a36954da89111c29">smooth</a> (smooth_state, current_state, smooth_state_next, predicted_state_next, smooth_var, current_var, smooth_var_next, predicted_var_next, stock_info)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#acd61b2bd9842378387805a4ecefe351b">summarise</a> (state, variance, summary, stock_info, mean_f_range, landings_numbers, discards_numbers)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekalman.html#a74aa8a2c83db9e606d72ea0bd513b0fb">summarise</a> (state, variance, summary, stock_info, mean_f_range)</td></tr>
 </table>
 <hr/><h2>Function/Subroutine Documentation</h2>
-<a class="anchor" id="a3cf23386786e832ed79919a0b1118226"></a><!-- doxytag: member="kalman::calculate_phi" ref="a3cf23386786e832ed79919a0b1118226" args="(current_state, stock_info)" -->
+<a class="anchor" id="a04f65b37980c6ca1f0ee5fafcdbf2e76"></a><!-- doxytag: member="kalman::calculate_phi" ref="a04f65b37980c6ca1f0ee5fafcdbf2e76" args="(current_state, stock_info)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">real (wp),dimension (nstate,nstate) kalman::calculate_phi </td>
+          <td class="memname">double precision,dimension (nstate,nstate) kalman::calculate_phi </td>
           <td>(</td>
-          <td class="paramtype">real (wp),dimension (nstate),intent(in),target&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate),intent(in),target&nbsp;</td>
           <td class="paramname"> <em>current_state</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">type (<a class="el" href="typekf__data__structures_1_1stock__info__type.html">stock_info_type</a>),intent(in)&nbsp;</td>
+          <td class="paramtype">type (stock_info_type),intent(in)&nbsp;</td>
           <td class="paramname"> <em>stock_info</em></td><td>&nbsp;</td>
         </tr>
         <tr>
@@ -69,15 +67,21 @@
 
 </div>
 </div>
-<a class="anchor" id="ac0927911501e3d059a99987695096e0c"></a><!-- doxytag: member="kalman::estimate_stock_summary" ref="ac0927911501e3d059a99987695096e0c" args="(stock_summary, mean_f_range)" -->
+<a class="anchor" id="a36300182d6441a839dec4ce934b78545"></a><!-- doxytag: member="kalman::estimate_stock_summary" ref="a36300182d6441a839dec4ce934b78545" args="(stock_summary, stock_summary_smooth, mean_f_range)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">subroutine kalman::estimate_stock_summary </td>
           <td>(</td>
-          <td class="paramtype">type (<a class="el" href="typekf__data__structures_1_1stock__summary__type.html">stock_summary_type</a>),dimension (ymin:kf_ymax),intent(out)&nbsp;</td>
+          <td class="paramtype">type (stock_summary_type),dimension (ymin:ymax),intent(out)&nbsp;</td>
           <td class="paramname"> <em>stock_summary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">type (stock_summary_type),dimension (ymin:ymax),intent(out)&nbsp;</td>
+          <td class="paramname"> <em>stock_summary_smooth</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -103,8 +107,8 @@
         <tr>
           <td class="memname">subroutine kalman::filter </td>
           <td>(</td>
-          <td class="paramtype">real (wp),intent(out)&nbsp;</td>
-          <td class="paramname"> <em>log_lik</em></td>
+          <td class="paramtype">double precision,intent(out)&nbsp;</td>
+          <td class="paramname"> <em>LOG_lik</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -112,57 +116,57 @@
 </div>
 <div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a460278a0c0d112ead9f6d95dfd992987"></a><!-- doxytag: member="kalman::initialise_logistic_parameters" ref="a460278a0c0d112ead9f6d95dfd992987" args="(logistic_parameters)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">subroutine kalman::initialise_logistic_parameters </td>
-          <td>(</td>
-          <td class="paramtype">real (wp),dimension (2),intent(out)&nbsp;</td>
-          <td class="paramname"> <em>logistic_parameters</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5537e169f414a60a696d52792a39c8e1"></a><!-- doxytag: member="kalman::initialise_state_variance" ref="a5537e169f414a60a696d52792a39c8e1" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">subroutine kalman::initialise_state_variance </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a10b97c8711c53d71a5861c383cd40538"></a><!-- doxytag: member="kalman::initialise_state_vector" ref="a10b97c8711c53d71a5861c383cd40538" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">subroutine kalman::initialise_state_vector </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Create a <code>GMRFLib_ai_param_tp</code> -object holding the default values. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>ai_par</em>&nbsp;</td><td>A pointer to a <code>GMRFLib_ai_param_tp</code> pointer. At output the <code>GMRFLib_ai_param_tp</code> -object contains the default values.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="user"><dt><b>Description of elements in <code>GMRFLib_ai_param_tp</code> -object:</b></dt><dd></dd></dl>
+<p><em>GMRFLib_ai_param_tp::strategy</em> : The strategy used to compute approximations to the posterior marginals <img class="formulaInl" alt="$ \pi(x_i \mid \mbox{\boldmath$\theta$}, \mbox{\boldmath$y$}) $" src="form_1.png"/>. One of GMRFLib_ai_strategy_tp. <br/>
+ Default value: GMRFLib_AI_STRATEGY_MEANCORRECTED_GAUSSIAN<br/>
+</p>
+<p><em>GMRFLib_ai_param_tp::fast</em> : Use the conditinal mean as an approximation to the conditional mode, and approximate the log of the denominator in the Laplace approximation by a linear term.<br/>
+ <b>Default value: GMRFLib_TRUE </b><br/>
+</p>
+<p><em>GMRFLib_ai_param_tp::linear_correction</em> One of GMRFLib_ai_linear_correction_tp. Various ways to approximate the log of the denominator in the Laplace approximation by a linear term. If GMRFLib_ai_param_tp::fast, and the meancorrected or skewmeancorrected strategy is selected, then GMRFLib_ai_param_tp::linear_correction is GMRFLib_AI_LINEAR_CORRECTION_FAST, which computes the linear term exact.</p>
+<p><em>GMRFLib_ai_param_tp::int_strategy</em> : Use a grid strategy or a central composite design to integrate out the hyperparameters.<br/>
+ <b>Default value: GMRFLib_AI_INT_STRATEGY_GRID </b><br/>
+</p>
+<p><em>GMRFLib_ai_param_tp::f0</em> : Only used if <em>int_strategy</em> = <em>GMRFLib_AI_INT_STRATEGY_CCD</em>. <br/>
+ Parameter used in the CCD integration.<br/>
+ <b>Default value: 1.1 </b><br/>
+</p>
+<p><em>GMRFLib_ai_param_tp::dz</em> : Step length for the integration procedure.<br/>
+ <b>Default value: 1 </b><br/>
+</p>
+<p><em>GMRFLib_ai_param_tp::adjust_weights</em> : Adjust the weights in the integration procedure so that a Gaussian density is integrated with no error.<br/>
+ <b>Default value: GMRFLib_TRUE </b><br/>
+</p>
+<p><em>GMRFLib_ai_param_tp::diff_logdens</em> : Only used if <em>int_strategy</em> = GMRFLib_AI_INT_STRATEGY_GRID. <br/>
+ Threshhold for accepting a configuration.<br/>
+ <b>Default value: 2.5 </b><br/>
+</p>
+<p><em>GMRFLib_ai_param_tp::skip_configurations</em> : Only used if <em>int_strategy</em> = GMRFLib_AI_INT_STRATEGY_GRID. <br/>
+ Skip fill-in configuration larger than a non-accepted one.<br/>
+ <b>Default value: GMRFLib_TRUE </b><br/>
+</p>
+<p><em>GMRFLib_ai_param_tp::gradient_forward_finite_difference</em> : Use forward finite difference to compute the gradient.<br/>
+ <b>Default value: GMRFLib_TRUE </b><br/>
+</p>
+<p><em>GMRFLib_ai_param_tp::gradient_finite_difference_step_len</em> : Step length to compute the gradient.<br/>
+ <b>Default value: 1.0e-4 </b><br/>
+</p>
+<p><em>GMRFLib_ai_param_tp::hessian_forward_finite_difference</em> : Use forward finite difference to compute the hessian at the mode.<br/>
+ <b>Default value: GMRFLib_TRUE </b><br/>
+</p>
+<p><em>GMRFLib_ai_param_tp::hessian_finite_difference_step_len</em> : Step length to compute the hessian at the mode.<br/>
+ <b>Default value: 1.0e-4 </b><br/>
+</p>
+<p><em>GMRFLib_ai_param_tp::hessian_force_diagonal</em> : Force the hessian to be diagonal.<br/>
+ <b>Default value: GMRFLib_FALSE </b><br/>
+ </p>
 
 </div>
 </div>
@@ -179,25 +183,25 @@
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate),intent(in),target&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate),intent(in),target&nbsp;</td>
           <td class="paramname"> <em>current_state</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate),intent(out),target&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate),intent(out),target&nbsp;</td>
           <td class="paramname"> <em>predicted_state</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate, nstate),intent(in)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate,nstate),intent(in)&nbsp;</td>
           <td class="paramname"> <em>current_variance</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate, nstate),intent(out)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate,nstate),intent(out)&nbsp;</td>
           <td class="paramname"> <em>predicted_variance</em>, </td>
         </tr>
         <tr>
@@ -209,7 +213,7 @@
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">type (<a class="el" href="typekf__data__structures_1_1stock__info__type.html">stock_info_type</a>),intent(in)&nbsp;</td>
+          <td class="paramtype">type (stock_info_type),intent(in)&nbsp;</td>
           <td class="paramname"> <em>stock_info</em>, </td>
         </tr>
         <tr>
@@ -229,45 +233,12 @@
 
 </div>
 </div>
-<a class="anchor" id="ac16c03209278ed79a9cd351849ca956c"></a><!-- doxytag: member="kalman::project_ahead" ref="ac16c03209278ed79a9cd351849ca956c" args="(stock_summary, mean_f_range, var_tmp)" -->
+<a class="anchor" id="a14bfd7b65e12f21ab59b2f1d423fe020"></a><!-- doxytag: member="kalman::random_input_variance" ref="a14bfd7b65e12f21ab59b2f1d423fe020" args="(iy, number_of_recruits)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">subroutine kalman::project_ahead </td>
-          <td>(</td>
-          <td class="paramtype">type (<a class="el" href="typekf__data__structures_1_1stock__summary__type.html">stock_summary_type</a>),dimension (kf_ymax+1:ymax),intent(out)&nbsp;</td>
-          <td class="paramname"> <em>stock_summary</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">integer,dimension (2),intent(in)&nbsp;</td>
-          <td class="paramname"> <em>mean_f_range</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">real (wp),dimension (amin:amax, amin:amax),intent(out)&nbsp;</td>
-          <td class="paramname"> <em>var_tmp</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac40ce3f83337c56140c9f321de8c7a7e"></a><!-- doxytag: member="kalman::random_input_variance" ref="ac40ce3f83337c56140c9f321de8c7a7e" args="(iy, number_of_recruits)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">real (wp),dimension (nstate, nstate) kalman::random_input_variance </td>
+          <td class="memname">double precision,dimension (nstate, nstate) kalman::random_input_variance </td>
           <td>(</td>
           <td class="paramtype">integer,intent(in)&nbsp;</td>
           <td class="paramname"> <em>iy</em>, </td>
@@ -275,7 +246,7 @@
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),intent(in)&nbsp;</td>
+          <td class="paramtype">double precision,intent(in)&nbsp;</td>
           <td class="paramname"> <em>number_of_recruits</em></td><td>&nbsp;</td>
         </tr>
         <tr>
@@ -296,55 +267,55 @@
         <tr>
           <td class="memname">subroutine kalman::smooth </td>
           <td>(</td>
-          <td class="paramtype">real (wp),dimension (nstate),intent(out)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate),intent(out)&nbsp;</td>
           <td class="paramname"> <em>smooth_state</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate),intent(in)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate),intent(in)&nbsp;</td>
           <td class="paramname"> <em>current_state</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate),intent(in)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate),intent(in)&nbsp;</td>
           <td class="paramname"> <em>smooth_state_next</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate),intent(in)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate),intent(in)&nbsp;</td>
           <td class="paramname"> <em>predicted_state_next</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate, nstate),intent(out)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate, nstate),intent(out)&nbsp;</td>
           <td class="paramname"> <em>smooth_var</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate, nstate),intent(in)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate, nstate),intent(in)&nbsp;</td>
           <td class="paramname"> <em>current_var</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate, nstate),intent(in)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate, nstate),intent(in)&nbsp;</td>
           <td class="paramname"> <em>smooth_var_next</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate, nstate),intent(in)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate, nstate),intent(in)&nbsp;</td>
           <td class="paramname"> <em>predicted_var_next</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">type (<a class="el" href="typekf__data__structures_1_1stock__info__type.html">stock_info_type</a>),intent(in)&nbsp;</td>
+          <td class="paramtype">type (stock_info_type),intent(in)&nbsp;</td>
           <td class="paramname"> <em>stock_info</em></td><td>&nbsp;</td>
         </tr>
         <tr>
@@ -358,51 +329,39 @@
 
 </div>
 </div>
-<a class="anchor" id="acd61b2bd9842378387805a4ecefe351b"></a><!-- doxytag: member="kalman::summarise" ref="acd61b2bd9842378387805a4ecefe351b" args="(state, variance, summary, stock_info, mean_f_range, landings_numbers, discards_numbers)" -->
+<a class="anchor" id="a74aa8a2c83db9e606d72ea0bd513b0fb"></a><!-- doxytag: member="kalman::summarise" ref="a74aa8a2c83db9e606d72ea0bd513b0fb" args="(state, variance, summary, stock_info, mean_f_range)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">subroutine kalman::summarise </td>
           <td>(</td>
-          <td class="paramtype">real (wp),dimension (nstate),intent(in)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate),intent(in)&nbsp;</td>
           <td class="paramname"> <em>state</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate, nstate),intent(in)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate, nstate),intent(in)&nbsp;</td>
           <td class="paramname"> <em>variance</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">type (<a class="el" href="typekf__data__structures_1_1stock__summary__type.html">stock_summary_type</a>),intent(out)&nbsp;</td>
+          <td class="paramtype">type (stock_summary_type),intent(out)&nbsp;</td>
           <td class="paramname"> <em>summary</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">type (<a class="el" href="typekf__data__structures_1_1stock__info__type.html">stock_info_type</a>),intent(in)&nbsp;</td>
+          <td class="paramtype">type (stock_info_type),intent(in)&nbsp;</td>
           <td class="paramname"> <em>stock_info</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">integer,dimension (2),intent(in)&nbsp;</td>
-          <td class="paramname"> <em>mean_f_range</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">real (wp),dimension (amin:amax),intent(in),optional&nbsp;</td>
-          <td class="paramname"> <em>landings_numbers</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">real (wp),dimension (amin:amax),intent(in),optional&nbsp;</td>
-          <td class="paramname"> <em>discards_numbers</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>mean_f_range</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -428,43 +387,43 @@
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate),intent(in),target&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate),intent(in),target&nbsp;</td>
           <td class="paramname"> <em>predicted_state</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate, nstate),intent(in)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate, nstate),intent(in)&nbsp;</td>
           <td class="paramname"> <em>predicted_variance</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate),intent(out),target&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate),intent(out),target&nbsp;</td>
           <td class="paramname"> <em>new_state</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (nstate, nstate),intent(out)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (nstate, nstate),intent(out)&nbsp;</td>
           <td class="paramname"> <em>new_variance</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">type (<a class="el" href="typekf__data__structures_1_1stock__info__type.html">stock_info_type</a>),intent(in)&nbsp;</td>
+          <td class="paramtype">type (stock_info_type),intent(in)&nbsp;</td>
           <td class="paramname"> <em>stock_info</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),intent(out)&nbsp;</td>
+          <td class="paramtype">double precision,intent(out)&nbsp;</td>
           <td class="paramname"> <em>rss</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),intent(out)&nbsp;</td>
+          <td class="paramtype">double precision,intent(out)&nbsp;</td>
           <td class="paramname"> <em>delta</em>, </td>
         </tr>
         <tr>
@@ -485,7 +444,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Generated on Mon Oct 19 23:43:34 2009 for TSA by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on Tue Oct 20 11:54:02 2009 for TSA by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -12,7 +12,6 @@
   <div class="tabs">
     <ul>
       <li><a href="main.html"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&nbsp;Types&nbsp;List</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -28,25 +27,30 @@
 <div class="contents">
 <h1>matrix_routines Module Reference</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Functions/Subroutines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacematrix__routines.html#a99e160c5e38144695bd7f21701685a9b">inverse</a> (x, x_inv, ifail)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacematrix__routines.html#a7959bbc0972ca80f1e1ab66d8eec7325">gen_inverse</a> (x, x_inv, ifail)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacematrix__routines.html#a0e6652144f97fee67310dbac1c7b176f">determinant</a> (x, det, ifail)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacematrix__routines.html#ad0fa97384e972ad293321ea0c5d77714">determinant</a> (n, x, det, ifail)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">subroutine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacematrix__routines.html#a1767e30d011ad86e170f55c677e897cf">gen_inverse</a> (n, x, x_inv, ifail)</td></tr>
 </table>
 <hr/><h2>Function/Subroutine Documentation</h2>
-<a class="anchor" id="a0e6652144f97fee67310dbac1c7b176f"></a><!-- doxytag: member="matrix_routines::determinant" ref="a0e6652144f97fee67310dbac1c7b176f" args="(x, det, ifail)" -->
+<a class="anchor" id="ad0fa97384e972ad293321ea0c5d77714"></a><!-- doxytag: member="matrix_routines::determinant" ref="ad0fa97384e972ad293321ea0c5d77714" args="(n, x, det, ifail)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">subroutine matrix_routines::determinant </td>
           <td>(</td>
-          <td class="paramtype">real (wp),dimension (:,:),intent(in)&nbsp;</td>
+          <td class="paramtype">integer,intent(in)&nbsp;</td>
+          <td class="paramname"> <em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double precision,dimension (n,n),intent(in)&nbsp;</td>
           <td class="paramname"> <em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),intent(out)&nbsp;</td>
+          <td class="paramtype">double precision,intent(out)&nbsp;</td>
           <td class="paramname"> <em>det</em>, </td>
         </tr>
         <tr>
@@ -66,53 +70,26 @@
 
 </div>
 </div>
-<a class="anchor" id="a7959bbc0972ca80f1e1ab66d8eec7325"></a><!-- doxytag: member="matrix_routines::gen_inverse" ref="a7959bbc0972ca80f1e1ab66d8eec7325" args="(x, x_inv, ifail)" -->
+<a class="anchor" id="a1767e30d011ad86e170f55c677e897cf"></a><!-- doxytag: member="matrix_routines::gen_inverse" ref="a1767e30d011ad86e170f55c677e897cf" args="(n, x, x_inv, ifail)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">subroutine matrix_routines::gen_inverse </td>
           <td>(</td>
-          <td class="paramtype">real (wp),dimension (:,:),intent(in)&nbsp;</td>
+          <td class="paramtype">integer,intent(in)&nbsp;</td>
+          <td class="paramname"> <em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double precision,dimension (n,n),intent(in)&nbsp;</td>
           <td class="paramname"> <em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">real (wp),dimension (:,:),intent(out)&nbsp;</td>
-          <td class="paramname"> <em>x_inv</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">integer,intent(out)&nbsp;</td>
-          <td class="paramname"> <em>ifail</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a99e160c5e38144695bd7f21701685a9b"></a><!-- doxytag: member="matrix_routines::inverse" ref="a99e160c5e38144695bd7f21701685a9b" args="(x, x_inv, ifail)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">subroutine matrix_routines::inverse </td>
-          <td>(</td>
-          <td class="paramtype">real (wp),dimension (:,:),intent(in)&nbsp;</td>
-          <td class="paramname"> <em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">real (wp),dimension (:,:),intent(out)&nbsp;</td>
+          <td class="paramtype">double precision,dimension (n,n),intent(out)&nbsp;</td>
           <td class="paramname"> <em>x_inv</em>, </td>
         </tr>
         <tr>
@@ -133,7 +110,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Generated on Mon Oct 19 23:43:34 2009 for TSA by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on Tue Oct 20 11:54:02 2009 for TSA by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
