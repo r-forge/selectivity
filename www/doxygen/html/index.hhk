@@ -285,8 +285,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacekf__data__structures.html#a922f4dcf5daa9b54b357efc985fac329"><param name="Name" value="kf_data_structures"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacekf__data__structures.html#a922f4dcf5daa9b54b357efc985fac329"><param name="Name" value="kf_data_structures.f90"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="kind_8f90.html"><param name="Name" value="kind.f90"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacekind__module.html"><param name="Name" value="kind_module"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="typekf__data__structures_1_1stock__summary__type.html#ad803d06d7840d43c97a205e9a2791b4a"><param name="Name" value="landings"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacemaximum__likelihood__routines.html#accf144b19e5929bc612bebd92b133cc1"><param name="Name" value="lik_calc"></OBJECT>
   <UL>
@@ -453,11 +451,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="typekf__data__structures_1_1sd__type.html#ac13493bd54002150d27932fee6f3c085"><param name="Name" value="kf_data_structures::sd_type"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="typekf__data__structures_1_1parameter__type.html#a0666edc723d5304899274c33fb816836"><param name="Name" value="value"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacekind__module.html#a31f3062a0a303fb71bdd52a2d1c59ebc"><param name="Name" value="wp"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacekind__module.html#a31f3062a0a303fb71bdd52a2d1c59ebc"><param name="Name" value="kind.f90"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacekind__module.html#a31f3062a0a303fb71bdd52a2d1c59ebc"><param name="Name" value="kind_module"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="typefilter__setup_1_1state__subscripts.html#a37123f4519f221f01ac4e5931bb22734"><param name="Name" value="y"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="typefilter__setup_1_1state__subscripts.html#a37123f4519f221f01ac4e5931bb22734"><param name="Name" value="filter_setup::state_subscripts"></OBJECT>

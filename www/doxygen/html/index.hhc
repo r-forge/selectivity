@@ -24,7 +24,6 @@
   <LI><OBJECT type="text/sitemap"><param name="Name" value="filter_setup"><param name="Local" value="namespacefilter__setup.html"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="kalman"><param name="Local" value="namespacekalman.html"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="kf_data_structures"><param name="Local" value="namespacekf__data__structures.html"><param name="ImageNumber" value="11"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="kind_module"><param name="Local" value="namespacekind__module.html"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="matrix_routines"><param name="Local" value="namespacematrix__routines.html"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="maximum_likelihood_module"><param name="Local" value="namespacemaximum__likelihood__module.html"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="maximum_likelihood_routines"><param name="Local" value="namespacemaximum__likelihood__routines.html"><param name="ImageNumber" value="11"></OBJECT>

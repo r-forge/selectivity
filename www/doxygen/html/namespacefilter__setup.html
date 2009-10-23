@@ -25,10 +25,7 @@
   </div>
 </div>
 <div class="contents">
-<h1>filter_setup Module Reference</h1>
-<p>Create a <code>GMRFLib_ai_param_tp</code> -object holding the default values.  
-<a href="#_details">More...</a></p>
-<table border="0" cellpadding="0" cellspacing="0">
+<h1>filter_setup Module Reference</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Data Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">type &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="typefilter__setup_1_1state__subscripts.html">state_subscripts</a></td></tr>
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
@@ -48,58 +45,6 @@ allocatable, target&nbsp;</td><td class="memItemRight" valign="bottom"><a class=
 <tr><td class="memItemLeft" align="right" valign="top">double precision, dimension(:,:,:), <br class="typebreak"/>
 allocatable, target&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefilter__setup.html#acc7baad277fc7384273c780279a1b65e">state_variance_smooth</a></td></tr>
 </table>
-<hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>Create a <code>GMRFLib_ai_param_tp</code> -object holding the default values. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>ai_par</em>&nbsp;</td><td>A pointer to a <code>GMRFLib_ai_param_tp</code> pointer. At output the <code>GMRFLib_ai_param_tp</code> -object contains the default values.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="user"><dt><b>Description of elements in <code>GMRFLib_ai_param_tp</code> -object:</b></dt><dd></dd></dl>
-<p><em>GMRFLib_ai_param_tp::strategy</em> : The strategy used to compute approximations to the posterior marginals <img class="formulaInl" alt="$ \pi(x_i \mid \mbox{\boldmath$\theta$}, \mbox{\boldmath$y$}) $" src="form_1.png"/>. One of GMRFLib_ai_strategy_tp. <br/>
- Default value: GMRFLib_AI_STRATEGY_MEANCORRECTED_GAUSSIAN<br/>
-</p>
-<p><em>GMRFLib_ai_param_tp::fast</em> : Use the conditinal mean as an approximation to the conditional mode, and approximate the log of the denominator in the Laplace approximation by a linear term.<br/>
- <b>Default value: GMRFLib_TRUE </b><br/>
-</p>
-<p><em>GMRFLib_ai_param_tp::linear_correction</em> One of GMRFLib_ai_linear_correction_tp. Various ways to approximate the log of the denominator in the Laplace approximation by a linear term. If GMRFLib_ai_param_tp::fast, and the meancorrected or skewmeancorrected strategy is selected, then GMRFLib_ai_param_tp::linear_correction is GMRFLib_AI_LINEAR_CORRECTION_FAST, which computes the linear term exact.</p>
-<p><em>GMRFLib_ai_param_tp::int_strategy</em> : Use a grid strategy or a central composite design to integrate out the hyperparameters.<br/>
- <b>Default value: GMRFLib_AI_INT_STRATEGY_GRID </b><br/>
-</p>
-<p><em>GMRFLib_ai_param_tp::f0</em> : Only used if <em>int_strategy</em> = <em>GMRFLib_AI_INT_STRATEGY_CCD</em>. <br/>
- Parameter used in the CCD integration.<br/>
- <b>Default value: 1.1 </b><br/>
-</p>
-<p><em>GMRFLib_ai_param_tp::dz</em> : Step length for the integration procedure.<br/>
- <b>Default value: 1 </b><br/>
-</p>
-<p><em>GMRFLib_ai_param_tp::adjust_weights</em> : Adjust the weights in the integration procedure so that a Gaussian density is integrated with no error.<br/>
- <b>Default value: GMRFLib_TRUE </b><br/>
-</p>
-<p><em>GMRFLib_ai_param_tp::diff_logdens</em> : Only used if <em>int_strategy</em> = GMRFLib_AI_INT_STRATEGY_GRID. <br/>
- Threshhold for accepting a configuration.<br/>
- <b>Default value: 2.5 </b><br/>
-</p>
-<p><em>GMRFLib_ai_param_tp::skip_configurations</em> : Only used if <em>int_strategy</em> = GMRFLib_AI_INT_STRATEGY_GRID. <br/>
- Skip fill-in configuration larger than a non-accepted one.<br/>
- <b>Default value: GMRFLib_TRUE </b><br/>
-</p>
-<p><em>GMRFLib_ai_param_tp::gradient_forward_finite_difference</em> : Use forward finite difference to compute the gradient.<br/>
- <b>Default value: GMRFLib_TRUE </b><br/>
-</p>
-<p><em>GMRFLib_ai_param_tp::gradient_finite_difference_step_len</em> : Step length to compute the gradient.<br/>
- <b>Default value: 1.0e-4 </b><br/>
-</p>
-<p><em>GMRFLib_ai_param_tp::hessian_forward_finite_difference</em> : Use forward finite difference to compute the hessian at the mode.<br/>
- <b>Default value: GMRFLib_TRUE </b><br/>
-</p>
-<p><em>GMRFLib_ai_param_tp::hessian_finite_difference_step_len</em> : Step length to compute the hessian at the mode.<br/>
- <b>Default value: 1.0e-4 </b><br/>
-</p>
-<p><em>GMRFLib_ai_param_tp::hessian_force_diagonal</em> : Force the hessian to be diagonal.<br/>
- <b>Default value: GMRFLib_FALSE </b><br/>
- </p>
 <hr/><h2>Variable Documentation</h2>
 <a class="anchor" id="af7c41cae271ddccbbf224d20420c42c1"></a><!-- doxytag: member="filter_setup::nage" ref="af7c41cae271ddccbbf224d20420c42c1" args="" -->
 <div class="memitem">
@@ -219,7 +164,7 @@ allocatable, target&nbsp;</td><td class="memItemRight" valign="bottom"><a class=
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Generated on Tue Oct 20 11:54:02 2009 for TSA by&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Generated on Fri Oct 23 23:27:01 2009 for TSA by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
